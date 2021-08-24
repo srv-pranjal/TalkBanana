@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+body {
+  /* background-color: aqua; */
+  height: 100vh;
+  /* padding: 1rem; */
+  /* background: url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80") no-repeat; */
+  overflow: hidden;
+  font-family: "Nunito Sans", cursive;
+  box-sizing: border-box;
+}
+
+/* body::before{
+    content: "";
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80") cover no-repeat;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404
+    url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")
+    center no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+  opacity: 70%;
+}
+
+header {
+    background-color: yellow;
+  padding: 1rem;
+}
+
+section {
+  width: 100%;
+  max-width: 550px;
+  min-height: 100px;
+  margin: auto;
+  margin-top: 4rem;
+  /* background-color: yellow; */
+}
+
+#txt-input {
+  width: 80%;
+  height: 100px;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: rgba(255,255,255,0.9);
+}
+
+#btn-translate {
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  font-family: "Nunito Sans", cursive;
+  /* color: #fff; */
+  background-image: linear-gradient(to top right,#dcf311,#ff0505);
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  transition: all 1s;
+}
+
+#btn-translate:hover{
+    background-position: right center;
+    font-size: 1rem;
+}
+
+#result-area {
+  width: 80%;
+  height: 100px;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: rgba(255,255,255,0.9);
+}
+
+#result-area:empty::before {
+    content: "Output will be displayed here";
+    color: grey;
+    font-size: 1.1rem;
+  }
+
+::placeholder {
+    font-family: "Nunito Sans", cursive;
+    font-size: 1.1rem;
+  }
+
+footer {
+  margin-top: 0.5rem;
+  background-color: yellow;
+  width:100vw;
+  position: fixed;
+    bottom: 0;
+}
+
+footer div{
+    text-align: center;
+    padding: 1rem;
+    max-width: 550px;
+    margin: auto;
+    
+}
