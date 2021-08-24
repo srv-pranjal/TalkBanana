@@ -2,7 +2,7 @@ const inputText = document.querySelector("#txt-input");
 const translateButton = document.querySelector("#btn-translate");
 const resultArea = document.querySelector("#result-area");
 
-const apiURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+const apiURL = "https://api.funtranslations.com/translate/minion.json";
 
 function constructURL(text) {
   return `${apiURL}?text=${text}`;
