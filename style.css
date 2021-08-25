@@ -11,31 +11,34 @@ body {
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    background: #040404
-      url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")
-      top no-repeat;
-    background-size: cover;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    z-index: -1;
-    /* opacity: 80%; */
-  }
+  content: "";
+  position: fixed;
+  background: #040404
+    url("https://images.unsplash.com/photo-1515041219749-89347f83291a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")
+    top no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
 
 header {
   background-color: rgba(255, 255, 0, 0.8);
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 section {
   width: 100%;
   max-width: 550px;
   min-height: 100px;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #txt-input {
@@ -98,7 +101,6 @@ footer {
   width: 100vw;
   position: fixed;
   bottom: 0;
-  padding: 0.5rem;
 }
 #title-footer {
   font-size: 1.2rem;
