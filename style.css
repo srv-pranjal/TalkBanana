@@ -26,6 +26,7 @@ body::before {
   top: 0;
   height: 100vh;
   z-index: -1;
+  opacity: 0.8;
 }
 
 header {
@@ -52,7 +53,7 @@ section {
   margin: 1rem auto;
   padding: 1rem;
   font-size: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #btn-translate {
@@ -86,7 +87,7 @@ section {
   border: 2px solid black;
   margin: 1rem auto;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #result-area:empty::before {
@@ -98,7 +99,7 @@ section {
 ::placeholder {
   font-family: 'Hina Mincho', serif;;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 footer {
